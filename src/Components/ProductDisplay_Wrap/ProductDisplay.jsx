@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 export default function ProductDisplay(props) {
   const { show, ProductDisplay, ProductDisplay_Img, ProductDisplay_TextBox } = styles
 
-
   useEffect(() => {
 
 
