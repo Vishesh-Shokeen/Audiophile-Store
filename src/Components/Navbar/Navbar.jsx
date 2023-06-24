@@ -6,6 +6,7 @@ import Categories from '../Categories/Categories'
 import Cart from '../Cart/Cart'
 import { NavLink, Link } from 'react-router-dom'
 import cartContext from '../Context/CartContext'
+import Logo from '/assets/shared/desktop/logo.svg'
 export default function Navbar() {
 
     const { header, nav, openMenu, openCart, cartDiv, productCount } = styles
@@ -37,7 +38,8 @@ export default function Navbar() {
             </div>
 
             <Link to='/'>
-                <img src="Audiophile-Store/public/assets\shared\desktop\logo.svg" alt="cartIcon" />
+                {/* <img src="/assets\shared\desktop\logo.svg" alt="logo" /> */}
+                <img src={Logo} alt="logo" />
             </Link>
 
             <nav className={nav} onClick={closeNavBar}>

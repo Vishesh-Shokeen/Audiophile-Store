@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import styles from './Hero.module.css'
 import { Link } from 'react-router-dom'
-
+import heroImg from '/assets/home/desktop/image-hero.jpg'
 export default function Hero() {
 
     const {hero__container, onloadOpacity,hero__textBox, hero__img } = styles
@@ -35,7 +35,8 @@ export default function Hero() {
 
                     <source media="(max-width:800px )" srcSet="./public/assets/home/tablet/image-header.jpg" />
 
-                    <img src="../public/assets/home/desktop/image-hero.jpg" alt="hero__img" />
+                    {/* <img src="../public/assets/home/desktop/image-hero.jpg" alt="hero__img" /> */}
+                    <img src={heroImg} alt="hero__img" />
                 </picture>
 
             </div> 
