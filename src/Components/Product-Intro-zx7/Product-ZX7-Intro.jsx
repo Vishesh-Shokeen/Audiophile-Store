@@ -1,6 +1,12 @@
 import React from 'react'
 import styles from './Product-ZX7.module.css'
 import { Link } from 'react-router-dom'
+
+import zx7Img    from '/assets/home/desktop/image-speaker-zx7.jpg'
+import zx7Mobile from '/assets/home/mobile/image-speaker-zx7.jpg'
+import zx7Tablet from '/assets/home/tablet/image-speaker-zx7.jpg'
+
+
 export default function () {
     const { zx7_Intro, zx7_Img, zx7_TextBox } = styles
     return (
@@ -14,11 +20,11 @@ export default function () {
             </div>
 
             <picture className={zx7_Img}>
-                <source media="(max-width: 400px)" srcSet="assets\home\mobile\image-speaker-zx7.jpg" />
+                <source media="(max-width: 400px)" srcSet={zx7Mobile} />
 
-                <source media="(max-width: 800px)" srcSet="assets\home\tablet\image-speaker-zx7.jpg" />
+                <source media="(max-width: 800px)" srcSet={zx7Tablet} />
 
-                <img src="assets\home\desktop\image-speaker-zx7.jpg" alt="ZX7 Img" />
+                <img src={zx7Img} alt="ZX7 Img" />
             </picture>
 
         </div>

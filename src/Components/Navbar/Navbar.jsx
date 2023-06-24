@@ -7,6 +7,10 @@ import Cart from '../Cart/Cart'
 import { NavLink, Link } from 'react-router-dom'
 import cartContext from '../Context/CartContext'
 import Logo from '/assets/shared/desktop/logo.svg'
+import Burger from '/assets/shared/tablet/icon-hamburger.svg'
+import CartIcon from '/assets/shared/desktop/icon-cart.svg'
+
+
 export default function Navbar() {
 
     const { header, nav, openMenu, openCart, cartDiv, productCount } = styles
@@ -34,11 +38,10 @@ export default function Navbar() {
     return (
         <header className={header}>
             <div className={openMenu} onClick={NavSlider}>
-                <img src="/public/assets\shared\tablet\icon-hamburger.svg" alt="hamburger" />
+                <img src={Burger} alt="hamburger" />
             </div>
 
             <Link to='/'>
-                {/* <img src="/assets\shared\desktop\logo.svg" alt="logo" /> */}
                 <img src={Logo} alt="logo" />
             </Link>
 
@@ -75,7 +78,7 @@ export default function Navbar() {
             </nav>
 
             <div className={openCart} onClick={CartSlider}>
-                <img src="public\assets\shared\desktop\icon-cart.svg" alt="cartIcon" />
+                <img src={CartIcon} alt="cartIcon" />
 
                 {cartList.length >= 1 && <p className={productCount}>{cartList.length}</p>}
             </div>

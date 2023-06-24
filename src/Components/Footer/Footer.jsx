@@ -2,6 +2,11 @@ import React from 'react'
 import styles from './Footer.module.css'
 import { Link } from 'react-router-dom'
 
+import logo from '/assets/shared/desktop/logo.svg'
+import fbIcon from '/assets/shared/desktop/icon-facebook.svg'
+import twitterIcon from '/assets/shared/desktop/icon-twitter.svg'
+import instaIcon from '/assets/shared/desktop/icon-instagram.svg'
+
 export default function Footer() {
     const { Footer, Footer_nav, Footer_text, Footer_social } = styles
     return (
@@ -9,7 +14,7 @@ export default function Footer() {
         <div className={Footer}>
 
             <div>
-                <img src="assets\shared\desktop\logo.svg" alt="logo" />
+                <img src={logo} alt="logo" />
 
                 <div className={Footer_nav}>
                     <ul>
@@ -41,12 +46,10 @@ export default function Footer() {
                 </div>
 
                 <div className={Footer_social}>
-                    <img src="assets\shared\desktop\icon-facebook.svg" alt="social icon" />
-                    <img src="assets\shared\desktop\icon-twitter.svg" alt="social icon" />
-                    <img src="assets\shared\desktop\icon-instagram.svg" alt="social icon" />
+                    <img src={fbIcon} alt="social icon" />
+                    <img src={twitterIcon} alt="social icon" />
+                    <img src={instaIcon} alt="social icon" />
                 </div>
-
-
             </div>
         </div>
     )

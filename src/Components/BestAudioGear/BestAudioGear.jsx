@@ -1,6 +1,10 @@
 import React from 'react'
 import styles from './BestAudioGear.module.css'
 
+import aboutImg    from '/assets/shared/desktop/image-best-gear.jpg'
+import aboutMobile from '/assets/shared/mobile/image-best-gear.jpg'
+import aboutTablet from '/assets/shared/tablet/image-best-gear.jpg'
+
 export default function BestAudioGear() {
     const { bestAudioGear, bestAudioGear_TextBox, bestAudioGear_img } = styles
     return (
@@ -16,11 +20,11 @@ export default function BestAudioGear() {
             </div>
 
             <picture className={bestAudioGear_img}>
-                <source media="(max-width: 400px)" srcSet="assets\shared\mobile\image-best-gear.jpg" />
+                <source media="(max-width: 400px)" srcSet={aboutMobile} />
                 
-                <source media="(max-width: 800px)" srcSet="assets\shared\tablet\image-best-gear.jpg" />
+                <source media="(max-width: 800px)" srcSet={aboutTablet} />
 
-                <img src="assets\shared\desktop\image-best-gear.jpg" alt="best gear" />
+                <img src={aboutImg} alt="best gear" />
             </picture>
 
         </div>

@@ -16,13 +16,13 @@ export function makeServer({ environment = 'test' } = {}) {
                     desc: `More than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C.`,
                     inbox: ['Headphone Unit', 'Replacement Earcups', 'User Manual', '3.5mm 5m Audio Cable']
                 },
-                desktop_preview_image: 'assets/product-xx59-headphones/desktop/image-category-page-preview.jpg',
-                tablet_preview_image: 'assets/product-xx59-headphones/tablet/image-category-page-preview.jpg',
-                mobile_preview_image: 'assets/product-xx59-headphones/mobile/image-category-page-preview.jpg',
+                desktop_preview_image: '/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg',
+                tablet_preview_image: '/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg',
+                mobile_preview_image: '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg',
                 desktop_image_gallery: [
-                    'assets/product-xx59-headphones/desktop/image-gallery-1.jpg',
-                    'assets/product-xx59-headphones/desktop/image-gallery-2.jpg',
-                    'assets/product-xx59-headphones/desktop/image-gallery-3.jpg'
+                    '/assets/product-xx59-headphones/desktop/image-gallery-1.jpg',
+                    '/assets/product-xx59-headphones/desktop/image-gallery-2.jpg',
+                    '/assets/product-xx59-headphones/desktop/image-gallery-3.jpg'
                 ],
                 tablet_image_gallery: [
                     'assets/product-xx59-headphones/tablet/image-gallery-1.jpg',

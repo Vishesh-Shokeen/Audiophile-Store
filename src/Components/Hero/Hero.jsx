@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import styles from './Hero.module.css'
 import { Link } from 'react-router-dom'
 import heroImg from '/assets/home/desktop/image-hero.jpg'
+import mobileImg from '/assets/home/mobile/image-header.jpg'
+import tabletImg from '/assets/home/tablet/image-header.jpg'
 export default function Hero() {
 
     const {hero__container, onloadOpacity,hero__textBox, hero__img } = styles
@@ -31,11 +33,8 @@ export default function Hero() {
                 </div>
 
                 <picture onLoad={opacityChange} className={hero__img}>
-                    <source media="(max-width:500px )" srcSet="../public/assets/home/mobile/image-header.jpg" />
-
-                    <source media="(max-width:800px )" srcSet="./public/assets/home/tablet/image-header.jpg" />
-
-                    {/* <img src="../public/assets/home/desktop/image-hero.jpg" alt="hero__img" /> */}
+                    <source media="(max-width:500px )" srcSet={mobileImg} />
+                    <source media="(max-width:800px )" srcSet={tabletImg} />
                     <img src={heroImg} alt="hero__img" />
                 </picture>
 
