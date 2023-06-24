@@ -10,7 +10,9 @@ import CartState from './Components/Context/CartState.jsx'
 
 if (process.env.NODE_ENV === 'development') {
   makeServer({ environment: 'development' });
-} 
+}else if(process.env.NODE_ENV === 'production'){
+  makeServer({ environment: 'production' })
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter basename={import.meta.env.DEV ? '/' : '/Audiophile-Store/'}>
