@@ -33,11 +33,11 @@ export default function Navbar() {
     return (
         <header className={header}>
             <div className={openMenu} onClick={NavSlider}>
-                <img src="assets\shared\tablet\icon-hamburger.svg" alt="hamburger" />
+                <img src="/public/assets\shared\tablet\icon-hamburger.svg" alt="hamburger" />
             </div>
 
             <Link to='/'>
-                <img src="assets\shared\desktop\logo.svg" alt="cartIcon" />
+                <img src="public/assets\shared\desktop\logo.svg" alt="cartIcon" />
             </Link>
 
             <nav className={nav} onClick={closeNavBar}>
@@ -73,7 +73,7 @@ export default function Navbar() {
             </nav>
 
             <div className={openCart} onClick={CartSlider}>
-                <img src="assets\shared\desktop\icon-cart.svg" alt="cartIcon" />
+                <img src="public\assets\shared\desktop\icon-cart.svg" alt="cartIcon" />
 
                 {cartList.length >= 1 && <p className={productCount}>{cartList.length}</p>}
             </div>
