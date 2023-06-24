@@ -31,11 +31,11 @@ export default function Hero() {
                 </div>
 
                 <picture onLoad={opacityChange} className={hero__img}>
-                    <source media="(max-width:500px )" srcSet="/assets/home/mobile/image-header.jpg" />
+                    <source media="(max-width:500px )" srcSet="../public/assets/home/mobile/image-header.jpg" />
 
-                    <source media="(max-width:800px )" srcSet="/assets/home/tablet/image-header.jpg" />
+                    <source media="(max-width:800px )" srcSet="./public/assets/home/tablet/image-header.jpg" />
 
-                    <img src="/assets/home/desktop/image-hero.jpg" alt="hero__img" />
+                    <img src="../public/assets/home/desktop/image-hero.jpg" alt="hero__img" />
                 </picture>
 
             </div> 
