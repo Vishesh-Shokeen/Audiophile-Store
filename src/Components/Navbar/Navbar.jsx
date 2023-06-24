@@ -37,7 +37,7 @@ export default function Navbar() {
             </div>
 
             <Link to='/'>
-                <img src="public/assets\shared\desktop\logo.svg" alt="cartIcon" />
+                <img src="Audiophile-Store/public/assets\shared\desktop\logo.svg" alt="cartIcon" />
             </Link>
 
             <nav className={nav} onClick={closeNavBar}>
