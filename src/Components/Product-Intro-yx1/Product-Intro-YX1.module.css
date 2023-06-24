@@ -1,0 +1,27 @@
+@import url(/src/App.css);
+
+
+
+.yx1_Intro{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(350px , 1fr));
+    gap: 2rem;
+}
+
+
+.yx1_Intro > *{
+    display: grid;
+    place-content: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.yx1_TextBox{
+    background-color: var(--Clr-Gray);
+}
+
+@media (width < 800px) {
+    .yx1_Intro{
+        grid-template-rows:1fr 1fr;
+    }
+}

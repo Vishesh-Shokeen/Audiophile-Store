@@ -1,0 +1,11 @@
+@import url(/src/App.css);
+
+
+
+.productIntroSection {
+    display: grid;
+    justify-content: center;
+    gap: 5rem;
+    row-gap: 3rem;
+    padding: .5rem;
+}

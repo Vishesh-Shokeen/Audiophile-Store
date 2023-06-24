@@ -1,0 +1,96 @@
+@import url(/src/App.css);
+
+ 
+.hero__container {
+    display: grid;
+    grid-template-areas: 'stack';
+    align-items: center;
+    background-color: black;
+} 
+
+
+
+
+.hero__container>* {
+    grid-area: stack;
+}
+
+
+
+.hero__textBox {
+    padding-inline: 5rem ;
+    z-index: 1;
+    color: var(--Clr-White);
+    margin-top: 4rem;
+
+    display: grid;
+    place-items: start;
+    gap: 2rem;
+}
+
+
+.hero__textBox>span {
+    font-size: clamp(1rem , 1.2rem ,1.5rem);
+    letter-spacing: 10px;
+    color: var(--Clr-Gray);
+}
+
+
+.hero__textBox>h1 {
+    font-size: clamp(2.5rem , 8vw , 4.5rem);
+    line-height: 1.2;
+}
+
+
+
+.hero__textBox>p {
+    max-width: 40ch;
+    font-size: clamp(1rem , 1.2rem ,1.5rem);
+    line-height: 1.4;
+}
+
+.hero__img{
+    transition: opacity 2000ms ease-in;    
+    opacity: 0;
+}
+
+.onloadOpacity{
+    opacity: 1;
+}
+
+
+
+.hero__img>img {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+
+
+@media (width<=800px) {
+
+
+    .hero__textBox {
+        z-index: 1;
+        color: var(--Clr-White);
+        place-items: center;
+        gap: 1rem;
+        padding: 0;
+    }
+
+
+    .hero__textBox>span {
+        letter-spacing: 10px;
+        color: var(--Clr-Gray);
+    
+    
+    }
+    .hero__textBox>p {
+        text-align: center;
+    }
+
+    .hero__textBox>button {
+        font-size: 1.2rem;
+    }
+
+}

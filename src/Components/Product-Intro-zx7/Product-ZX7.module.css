@@ -1,0 +1,22 @@
+@import url(/src/App.css);
+
+
+.zx7_Intro {
+ display: grid;
+ grid-template-areas: 'overlap';
+ justify-content: center;
+ border-radius: 1rem;
+ overflow: hidden;
+}
+
+
+.zx7_Intro > * {
+    grid-area: overlap;
+}
+
+.zx7_TextBox {
+    font-size: minmax(4rem, 2vw);
+    z-index: 2;
+    align-self:center;
+    padding: 1rem;
+}

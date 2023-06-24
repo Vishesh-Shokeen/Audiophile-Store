@@ -1,0 +1,9 @@
+@import url(/src/App.css);
+
+
+.ProductDisplay_TextBox{
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    border: 2px solid red;
+}

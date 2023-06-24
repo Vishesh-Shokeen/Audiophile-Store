@@ -1,0 +1,6 @@
+@import url(/src/App.css);
+
+
+.ProductDetailsPage > * {
+    margin: 2rem auto 8rem auto;
+}

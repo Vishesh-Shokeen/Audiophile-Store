@@ -1,0 +1,71 @@
+@import url(/src/App.css);
+
+
+
+.Features_Box {
+    border: 1px solid ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    line-height: 1.6;
+}
+
+
+
+.Features_Box>:first-child {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.Features_Box>:last-child {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.Features_Box>:last-child>div {
+    margin: 1rem 0;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.Features_Box>:last-child>div>* {
+    padding: .5rem;
+    border: 1px solid;
+}
+
+
+
+.Features_Box>:last-child>div>*:hover {
+    background-color: var(--Clr-Black-Dark);
+    color: var(--Clr-White);
+}
+
+
+
+
+/* 
+@media (width < 900px) {
+
+    .Features_Box  >:last-child{
+        display: flex;
+        justify-content: space-between;
+        justify-self: n;
+    }
+    
+}
+
+@media (width < 500px) {
+    .Features_Box  >:last-child{
+        flex-direction: column;
+    }
+    
+} */

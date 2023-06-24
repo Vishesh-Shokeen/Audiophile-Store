@@ -1,0 +1,82 @@
+@import url(/src/App.css);
+
+
+.PurchaseWindow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+
+
+
+.PurchaseWindow_img>img {
+    min-height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+.PurchaseWindow_textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: start;
+    padding: 1rem;
+}
+
+
+.PurchaseWindow_textBox>span {
+    letter-spacing: 10px;
+    color: var(--Clr-Orange);
+}
+
+
+.PurchaseWindow_textBox>p {
+    max-width: 40ch;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+
+.PurchaseWindow_textBox>h1 {
+    font-size: clamp(1.4rem, 4vw + 1rem, 2.5rem);
+    line-height: 1;
+}
+
+
+
+.productQuantity {
+    display: flex;
+    gap: .5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.productQuantity p {
+    padding: .4rem 1.5rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 2rem;
+}
+
+
+
+.productQuantity p:hover {
+    color: var(--Clr-Orange);
+    font-weight: 600;
+}
+
+
+.purchase_wrap {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}

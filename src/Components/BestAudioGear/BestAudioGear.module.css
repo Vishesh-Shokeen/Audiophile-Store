@@ -1,0 +1,50 @@
+@import url(/src/App.css);
+
+
+
+.bestAudioGear {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+
+
+
+.bestAudioGear_TextBox {
+    display: grid;
+    align-content: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+
+
+
+.bestAudioGear_TextBox > h2  {
+    font-size: clamp(2.2rem ,2vw + 1rem , 3.5rem);
+    line-height: 1;
+}
+
+.bestAudioGear_TextBox > h2 >span {
+    color: var(--Clr-Orange);
+}
+
+
+
+
+.bestAudioGear_TextBox > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 40ch;
+}
+
+
+@media (width < 800px) {
+
+    .bestAudioGear_img{
+        order: -1;
+    }
+    
+}

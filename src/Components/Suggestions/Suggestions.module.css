@@ -1,0 +1,17 @@
+@import url(/src/App.css);
+
+.Suggestions{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 2rem;
+    gap: 3%;
+}
+
+
+.Suggestions_Box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 2rem ;
+} 

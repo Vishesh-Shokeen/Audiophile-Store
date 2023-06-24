@@ -1,0 +1,64 @@
+@import url(/src/App.css);
+
+
+
+
+
+.ProductDisplay {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 1rem 0 4rem 0;
+
+    transition: all 500ms ease-in;
+    filter: blur(100px);
+    transform: translateX(-200px) scale(.7);
+}
+
+.ProductDisplay_TextBox {
+    display: grid;
+    place-content: center;
+    justify-items: start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.ProductDisplay_TextBox>span {
+    letter-spacing: 10px;
+    color: var(--Clr-Orange);
+}
+
+
+.ProductDisplay_TextBox>h2 {
+    font-size: clamp(1.4rem, 5vw + 1rem, 3rem);
+    line-height: 1;
+}
+
+.ProductDisplay_TextBox>p {
+    font-size: min(3vw, 1.2rem);
+    line-height: 1.5;
+}
+
+
+
+
+
+.show {
+    transform: translate(0) scale(.9);
+    filter: blur(0);
+}
+
+
+
+
+@media (width < 600px) {
+
+    .ProductDisplay>picture {
+        order: -2;
+    }
+
+    .show {
+        transform: scale(1);
+    }
+
+}
