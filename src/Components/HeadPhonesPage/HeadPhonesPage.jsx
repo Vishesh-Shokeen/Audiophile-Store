@@ -17,32 +17,25 @@ export default function HeadPhonesPage() {
   }, [])
 
 
-  const headphones = productData.map((product, id) =>{
+  const headphones = productData.map((product, id) =>
 
-    const image = product.desktop_preview_image 
-    const tabletImg=product.mobile_preview_image
-    const mobileImg=product.tablet_preview_image
-
-
-   return  <ProductDisplay
-    key={id}
-    productName={product.name}
-    desc={product.desc}
-    image={image}
-    tabletImg={tabletImg}
-    mobileImg={mobileImg}
-    textOrder={id % 2 !== 0 ? '-1' : null}
-    serverID = {product.id}
+    <ProductDisplay
+      key={id}
+      productName={product.name}
+      desc={product.desc}
+      image={product.desktop_preview_image}
+      tabletImg={product.tablet_preview_image}
+      mobileImg={product.mobile_preview_image}
+      textOrder={id % 2 !== 0 ? '-1' : null}
+      serverID={product.id}
     />
-    
-  }
-    )
+  )
 
   return (
 
- <div className='wrapper'> 
-  {headphones}
- </div>
+    <div className='wrapper'>
+      {headphones}
+    </div>
 
   )
 }
