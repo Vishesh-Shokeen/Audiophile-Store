@@ -208,6 +208,7 @@ export function makeServer({ environment = 'production' } = {}) {
 
         routes() {
             this.namespace = 'api';
+            this.logging = false
             this.get('/products', (schema, request) => {
                 return schema.products.all();
             });

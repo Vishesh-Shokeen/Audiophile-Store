@@ -30,7 +30,7 @@ export default function PurchaseWindow(props) {
 
 
     function sendToCart() {
-        a.updateCart(({ name: productName, price: price, quantity: count, img: `assets/cart/${'image-' + productName.split(' ').join('-').toLowerCase()}.jpg`, id: productID }))
+        a.updateCart(({ name: productName, price: price, quantity: count, img: `/Audiophile-Store/assets/cart/${'image-' + productName.split(' ').join('-').toLowerCase()}.jpg`, id: productID }))
     }
 
     return (

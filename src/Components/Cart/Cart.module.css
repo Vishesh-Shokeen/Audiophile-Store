@@ -47,6 +47,12 @@
     width: 4rem;
 }
 
+
+.xxcv > p:first-of-type{
+    font-weight: 600;
+    outline: 2px solid red;
+}
+
 .xxcv > p:last-child{
     cursor: pointer;
 }

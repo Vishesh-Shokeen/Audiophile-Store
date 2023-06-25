@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Cart.module.css'
 import { useContext } from 'react'
 import cartContext from '../Context/CartContext'
@@ -11,14 +11,13 @@ export default function Cart(props) {
   const xx = useContext(cartContext)
   const CartList = xx.cartContent
 
-
   function deleteCart() {
     xx.deleteCart()
   }
 
-  function removeProduct(e){
+  function removeProduct(e) {
     const productID = Number(e.target.parentElement.id)
-  xx.removeProduct(productID)
+    xx.removeProduct(productID)
   }
 
 
@@ -41,9 +40,6 @@ export default function Cart(props) {
               >
                 <img src={x.img} alt="img" />
                 <p>{x.name}</p>
-                <p>{x.price}</p>
-                <hr />
-                <p>{x.quantity}</p>
                 <p onClick={removeProduct}>❌</p>
               </div>)}
 
