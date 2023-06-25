@@ -152,9 +152,9 @@ export function makeServer({ environment = 'test' } = {}) {
                     desc: `As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.`,
                     inbox: ['Headphone Unit', 'Replacement Earcups', 'User Manual', '3.5mm 5m Audio Cable']
                 },
-                desktop_preview_image: './assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg',
-                tablet_preview_image: './assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg',
-                mobile_preview_image: './assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg',
+                desktop_preview_image: '/Audiophile-Store/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg',
+                tablet_preview_image:  './Audiophile-Store/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg',
+                mobile_preview_image:  'Audiophile-Store/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg',
                 desktop_image_gallery: [
                     'assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg',
                     'assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg',
