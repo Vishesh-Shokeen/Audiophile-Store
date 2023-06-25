@@ -166,9 +166,9 @@ export function makeServer({ environment = 'test' } = {}) {
                     '/Audiophile-Store/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg',
                     '/Audiophile-Store/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg'
                 ],
-                desktop_product_image: 'assets/product-xx99-mark-one-headphones/desktop/image-product.jpg',
-                tablet_product_image: 'assets/product-xx99-mark-one-headphones/tablet/image-product.jpg',
-                mobile_product_image: 'assets/product-xx99-mark-one-headphones/mobile/image-product.jpg'
+                desktop_product_image: '/Audiophile-Store/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg',
+                tablet_product_image:  '/Audiophile-Store/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg',
+                mobile_product_image:  '/Audiophile-Store/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg'
             });
 
             server.create('product', {
