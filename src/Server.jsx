@@ -38,9 +38,9 @@ export function makeServer({ environment = 'test' } = {}) {
                     'assets/product-xx59-headphones/mobile/image-gallery-2.jpg',
                     'assets/product-xx59-headphones/mobile/image-gallery-3.jpg'
                 ],
-                desktop_product_image: 'assets/product-xx59-headphones/desktop/image-product.jpg',
-                tablet_product_image: 'assets/product-xx59-headphones/tablet/image-product.jpg',
-                mobile_product_image: 'assets/product-xx59-headphones/mobile/image-product.jpg'
+                desktop_product_image: './assets/product-xx59-headphones/desktop/image-product.jpg',
+                tablet_product_image:  './assets/product-xx59-headphones/tablet/image-product.jpg',
+                mobile_product_image:  './assets/product-xx59-headphones/mobile/image-product.jpg'
             });
 
             server.create('product', {
@@ -170,9 +170,9 @@ export function makeServer({ environment = 'test' } = {}) {
                     'assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg',
                     'assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg'
                 ],
-                desktop_product_image: 'assets/product-xx99-mark-one-headphones/desktop/image-product.jpg',
-                tablet_product_image: 'assets/product-xx99-mark-one-headphones/tablet/image-product.jpg',
-                mobile_product_image: 'assets/product-xx99-mark-one-headphones/mobile/image-product.jpg'
+                desktop_product_image: './assets/product-xx99-mark-one-headphones/desktop/image-product.jpg',
+                tablet_product_image:  './assets/product-xx99-mark-one-headphones/tablet/image-product.jpg',
+                mobile_product_image:  './assets/product-xx99-mark-one-headphones/mobile/image-product.jpg'
             });
 
             server.create('product', {
