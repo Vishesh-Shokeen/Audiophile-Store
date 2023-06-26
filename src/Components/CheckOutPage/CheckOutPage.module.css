@@ -1,23 +1,43 @@
 @import url(/src/App.css);
 
 
+
+
 .page {
     display: grid;
-    grid-template-columns: 1fr 40%;
-    gap: 3rem;
-    row-gap: .5rem;
+    grid-template-columns: 12rem 1fr 40%;
+    grid-template-rows: 4rem 1fr;
+    gap: 2rem;
+    row-gap: 1rem;
     width: min(98%, 1300px);
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
+
+
+.CheckOut {
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+.summaryCart {
+    grid-row: 2;
+    grid-column: 3/-1;
+    display: grid;
+}
+
 
 
 .CheckOut input {
-    border: 1px solid rgb(80, 79, 79, .8);
+    border: 1px solid rgb(80, 79, 79, .3);
 }
+
+
 
 .CheckOut>h1 {
     margin: 1rem 0;
 }
+
+
 
 .CheckOut>h2 {
     letter-spacing: 3px;
@@ -26,12 +46,14 @@
 }
 
 
-
 .CheckOut>section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 1rem;
 }
+
+
+
 
 .CheckOut label {
     padding: 1rem;
@@ -42,9 +64,13 @@
 }
 
 
+
 .CheckOut_Payment {
     padding: 1rem;
 }
+
+
+
 
 .CheckOut_Payment button.active {
     background-color: black;
@@ -59,6 +85,9 @@
     margin: 0 auto;
 }
 
+
+
+
 .cod {
     display: flex;
     align-items: center;
@@ -67,7 +96,6 @@
     margin: 0 auto;
     padding: 1rem;
 }
-
 
 
 
@@ -90,6 +118,7 @@ dialog {
     margin: auto auto;
     border-radius: 10px;
     overflow: hidden;
+    overflow-y: scroll;
 }
 
 
@@ -134,6 +163,9 @@ dialog>* {
     overflow: hidden;
 }
 
+
+
+
 .dropdownToggle {
     position: sticky;
     bottom: 0;
@@ -145,10 +177,12 @@ dialog>* {
     padding: 1rem;
 }
 
+
+
+
 .dropDown {
     height: auto;
 }
-
 
 
 .grandTotal {
@@ -174,8 +208,22 @@ dialog>* {
 
 
 @media (width < 900px) {
+
+    .CheckOut {
+        grid-row: unset;
+        grid-column: unset;
+    }
+
+    .summaryCart {
+        grid-row: unset;
+        grid-column: unset;
+    }
+
+
     .page {
         grid-template-columns: none;
+        grid-template-rows: none;
+
         grid-auto-flow: row;
     }
 
@@ -194,43 +242,43 @@ dialog>* {
 /***************
 ***************/
 
-.emptyBag{
+.emptyBag {
     height: 100vh;
     display: grid;
-place-content: center;
+    place-content: center;
 }
 
-.emptyBag  h1{
+.emptyBag h1 {
     cursor: pointer;
-    animation: jump 2000ms infinite alternate ;
+    animation: jump 2000ms infinite alternate;
 }
 
 
 @keyframes jump {
-  0% {
-    outline: 4px solid tomato;
-    outline-offset: 10px;
-    border-radius: 1rem;
-    overflow: hidden;
-    transform: translateY(20px);
+    0% {
+        outline: 4px solid tomato;
+        outline-offset: 10px;
+        border-radius: 1rem;
+        overflow: hidden;
+        transform: translateY(20px);
 
-    color: rgb(246, 144, 144);
-  }
-
-
-  25% {
-    outline: 4px solid mediumpurple;
-    color: rgb(132, 75, 75);
-  }
+        color: rgb(246, 144, 144);
+    }
 
 
-  50% {
-    outline: 4px solid rgb(246, 144, 144);
-    color: mediumorchid;
-  }
+    25% {
+        outline: 4px solid mediumpurple;
+        color: rgb(132, 75, 75);
+    }
 
-  100%{
-    transform: translateY(0px);
-  }
-    
+
+    50% {
+        outline: 4px solid rgb(246, 144, 144);
+        color: mediumorchid;
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
 }

@@ -31,7 +31,10 @@
     color: var(--Clr-Orange);
 }
 
-
+.bestAudioGear_img{
+    border-radius: 1rem;
+    overflow: hidden;
+}
 
 
 .bestAudioGear_TextBox > p {

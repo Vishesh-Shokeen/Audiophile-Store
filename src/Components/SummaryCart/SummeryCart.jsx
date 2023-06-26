@@ -3,7 +3,7 @@ import styles from './SummeryCart.module.css'
 import { useContext } from 'react'
 import cartContext from '../Context/CartContext'
 export default function SummeryCart() {
-    const { cart, cartcontent, total, xxcv, purchasedProduct } = styles
+    const { cart, cartcontent, total, xxcv } = styles
 
     const xx = useContext(cartContext)
     const CartList = xx.cartContent
@@ -13,59 +13,60 @@ export default function SummeryCart() {
     const grandTotal = vat + shipping + totalPrice
 
 
-    function removeProduct(e){
+    function removeProduct(e) {
         const productID = Number(e.target.parentElement.id)
-      xx.removeProduct(productID)
-      }
+        xx.removeProduct(productID)
+    }
 
     return (
         <>
-        
 
-               <div className={cart}>
-                    <p>
-                        SUMMARY
-                    </p>
 
-                    <div className={cartcontent}>
+            <div className={cart}>
+                <p>
+                    SUMMARY
+                </p>
 
-                        {CartList.map((x, k) =>
-                            <div className={xxcv}
-                                key={k}
-                                id = {x.id}
-                            >
-                                <img src={x.img} alt="img" />
+                <div className={cartcontent}>
+
+                    {CartList.map((x, k) =>
+                        <div className={xxcv}
+                            key={k}
+                            id={x.id}
+                        >
+                            <img src={x.img} alt="img" />
+                            <div>
                                 <p>{x.name}</p>
                                 <p>{x.price}</p>
-                                <p>x</p>
+                            </div>
                                 <p>{x.quantity}</p>
-                                <p onClick={removeProduct}>❌</p>
-                            </div>)
-                        }
+                            <p onClick={removeProduct}>❌</p>
+                        </div>)
+                    }
+
+                </div>
+
+                <div className={total}>
+                    <div>
+                        <p>Total</p>
+                        <p>{totalPrice}</p>
 
                     </div>
+                    <div>
+                        <p>Shipping</p>
+                        <p>$ {shipping}</p>
 
-                    <div className={total}>
-                        <div>
-                            <p>Total</p>
-                            <p>{totalPrice}</p>
-
-                        </div>
-                        <div>
-                            <p>Shipping</p>
-                            <p>$ {shipping}</p>
-
-                        </div>
-                        <div>
-                            <p>VAT(INCLUDED)</p>
-                            <p>$ {vat}</p>
-                        </div>
-                        <div>
-                            <p>GRAND TOTAL</p>
-                            <p>$ {grandTotal}</p>
-                        </div>
+                    </div>
+                    <div>
+                        <p>VAT(INCLUDED)</p>
+                        <p>$ {vat}</p>
+                    </div>
+                    <div>
+                        <p>GRAND TOTAL</p>
+                        <p>$ {grandTotal}</p>
                     </div>
                 </div>
+            </div>
 
 
         </>

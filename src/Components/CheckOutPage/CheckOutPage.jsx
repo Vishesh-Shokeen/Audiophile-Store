@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 export default function CheckOutPage() {
 
     /***** CSS  ******/
-    const { dropdownToggle, dropDown, grandTotal, bag, bag_product, purchasedProduct, payBtn, active, emoneyMethod, codMethod, cod, onlinePayment, summaryCart, CheckOut, CheckOut_Billing, CheckOut_Shipping, CheckOut_Payment, page, emptyBag} = styles
+    const { goBackBtn, dropdownToggle, dropDown, grandTotal, bag, bag_product, purchasedProduct, payBtn, active, emoneyMethod, codMethod, cod, onlinePayment, summaryCart, CheckOut, CheckOut_Billing, CheckOut_Shipping, CheckOut_Payment, page, emptyBag } = styles
     /***************************/
 
 
@@ -98,11 +98,15 @@ export default function CheckOutPage() {
 
     return (
         <>
+
             {CartList.length > 0
 
                 ?
                 <div className={page}>
 
+                    <Link to='../'>
+                        <button className={`${goBackBtn} btn-2`}> 👈 Go Back</button>
+                    </Link>
                     <div className={CheckOut}>
                         <h1>CHECKOUT</h1>
 
@@ -187,8 +191,8 @@ export default function CheckOutPage() {
 
                     <div className={summaryCart}>
                         <SummeryCart />
+                        <button onClick={inputChecker} id={payBtn} className='btn-1'>Pay</button>
                     </div>
-                    <button onClick={inputChecker} id={payBtn} className='btn-1'>Pay</button>
 
 
 
@@ -251,10 +255,10 @@ export default function CheckOutPage() {
                 </div>
 
                 :
-        
+
                 <div className={emptyBag}>
                     <Link to='..'>
-                    <h1>Back To Home</h1>
+                        <h1>Back To Home</h1>
                     </Link>
                 </div>
             }

@@ -20,9 +20,26 @@ const CartState = (props) => {
         setCartContent([])
     }
 
+    function updateQuantity(id , num) {
+    setCartContent(prev => {
+       const newArray =  prev.map(x => {
+            if(x.id == id){
+                x.quantity = num
+            }
+            return x
+        })
+        return newArray
+    })
+
+
+
+
+
+    }
+
 
     return (
-        <cartContext.Provider value={{ cartContent, updateCart, deleteCart, removeProduct }}>
+        <cartContext.Provider value={{ cartContent, updateCart, deleteCart, removeProduct, updateQuantity }}>
             {props.children}
         </cartContext.Provider>
     )

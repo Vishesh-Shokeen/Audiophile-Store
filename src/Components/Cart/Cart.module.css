@@ -29,8 +29,6 @@
 .cartQuantity_div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
 }
 
 
@@ -40,7 +38,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    align-items: center;
 }
 
 .xxcv>img {
@@ -50,9 +47,29 @@
 
 .xxcv > p:first-of-type{
     font-weight: 600;
-    outline: 2px solid red;
 }
 
 .xxcv > p:last-child{
     cursor: pointer;
+}
+
+
+.quantityCounter{
+    padding: 1rem;
+}
+
+.quantityCounter>span:nth-child(1){
+    padding: .8rem;
+    user-select: none;
+    cursor: pointer;
+}
+.quantityCounter>span:nth-child(2){
+    padding: .8rem;
+    margin: 0 1rem ;
+    user-select: none;
+}
+.quantityCounter>span:nth-child(3){
+    padding: .8rem;
+    cursor: pointer;
+    user-select: none;
 }
