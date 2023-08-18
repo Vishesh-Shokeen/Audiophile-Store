@@ -55,7 +55,7 @@
 
 
 .quantityCounter{
-    padding: 1rem;
+    padding: .2rem;
 }
 
 .quantityCounter>span:nth-child(1){
