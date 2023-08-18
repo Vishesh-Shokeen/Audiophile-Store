@@ -20,20 +20,16 @@ const CartState = (props) => {
         setCartContent([])
     }
 
-    function updateQuantity(id , num) {
-    setCartContent(prev => {
-       const newArray =  prev.map(x => {
-            if(x.id == id){
-                x.quantity = num
-            }
-            return x
+    function updateQuantity(id, num) {
+        setCartContent(prev => {
+            const newArray = prev.map(x => {
+                if (x.id == id) {
+                    x.quantity = num
+                }
+                return x
+            })
+            return newArray
         })
-        return newArray
-    })
-
-
-
-
 
     }
 
