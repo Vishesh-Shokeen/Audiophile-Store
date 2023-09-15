@@ -5,6 +5,9 @@ import './App.css'
 import { BrowserRouter } from 'react-router-dom'
 import CartState from './Components/Context/CartState.jsx'
 
+import { makeServer } from "./mirage"
+
+makeServer({ environment: "production" })
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
