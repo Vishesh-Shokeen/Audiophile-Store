@@ -8,7 +8,7 @@ import CartState from './Components/Context/CartState.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename={import.meta.env.DEV ? '/' : '/KanBan-App/'}>
+  <BrowserRouter basename={import.meta.env.DEV ? '/' : '/Audiophile/'}>
     <CartState>
       <App />
     </CartState>
