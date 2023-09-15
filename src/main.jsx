@@ -5,7 +5,7 @@ import './App.css'
 import { BrowserRouter } from 'react-router-dom'
 import CartState from './Components/Context/CartState.jsx'
 
-import { makeServer } from "./mirage"
+import { makeServer } from "./Server.jsx"
 
 makeServer({ environment: "production" })
 
