@@ -162,8 +162,8 @@ export default function CheckOutPage() {
                             <h3>Payment Method</h3>
 
                             <div>
-                                <button onClick={showEmoney} className={`${emoneyMethod} ${state.emoney ? {active} : null}`}>e-Money</button>
-                                <button onClick={showCod} className={`${codMethod} ${state.cod ? {active} : null}`}>Cash on Delivery</button>
+                                <button onClick={showEmoney} className={`${emoneyMethod} ${state.emoney ? active : null}`}>e-Money</button>
+                                <button onClick={showCod} className={`${codMethod} ${state.cod ? active : null}`}>Cash on Delivery</button>
                             </div>
 
 
