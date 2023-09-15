@@ -7,10 +7,5 @@ export default defineConfig(({ command }) => {
     plugins: [react()],
     base: '/',
   }
-
-  if (command !== 'serve') {
-    config.base = '/Audiophile-Store/'
-  }
-
   return config
 })
